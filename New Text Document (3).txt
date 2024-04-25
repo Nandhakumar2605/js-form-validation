@@ -16,214 +16,68 @@
    font-family: "Poppins", sans-serif;
    background: lightblue;
    }
-    #outer {
-       position: relative;
-       max-width: 1000px;
-       margin: 40px auto;
-       border-radius: 10px;
-       background: white;
-       box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
-       display: flex;
- 
+
+   @media (max-width: 1000px) {
+     #outer {
+       flex-direction: column;
      }
- 
- 
-     .left-design {
-       flex: 1;
-       margin-right: 100px;
-       background-position: center;
-       border-radius: 10px 0 0 10px;
-       margin-top: 0px;
-       position: relative; 
-       border-radius: 10px 0 0 10px;  
-       background-color: lightgreen;
- 
+     .main-form {
+      margin-left:20%
      }
- 
-       .left-design .site-logo {
-        position: absolute;
-        top: 20px;
-        width: 50%;
-       }
- 
-        .left-design .background-image {
-        background-color: lightgreen;
-        }
- 
-        .main-form__input {
-   display: block;
-   width: 100%;
-   border-radius: 6px;
-   padding: 5px;
-   font-size: 12px;
-   margin-bottom: 10px;
-   text-align: center;
- }
- 
- .main-form__input {
-   border: 1px solid #cfcfcf;
- }
- 
- .button {
-       margin-left: 20px; 
-       margin-right: 20px;
+     .img{
+      margin-right: 30%;
      }
-     .button button {
-       font-size: 1rem;
-       padding: 5px;
-       width: 100%;
-       background-color: blue;
-       border-radius: 6px;
-       border: none;
-     }
- 
-    
-   .main-form {
-       max-width: 300px;
-       border-radius: 0 10px 10px 0;
-       box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
-       margin-right: 100px;
-       margin-top: 60px;
-       margin-bottom: 70px;
-     }
- 
-     .main-form__title {
-       margin: 0;
-       padding: 0;
-       margin-bottom: 1rem;
-       font-size: 11px;
-       font-weight: bolder;
-     }
- 
-     .step {
-       margin-bottom: 0rem;
-       font-size: 11px;
-       margin-top: 10px;
- 
-     }
- 
-     .terms {
-       text-align: center;
-       margin-bottom: 1rem;  
-     }
- 
-     .nav-tabs {
-       border-bottom: unset;
-       font-size: 10px;
-       font-weight: 10px;
-       border-radius: 0px 10px 0px 0px;
-     }
- 
-     .profile {
-       background-color: #cfcfcf;
-       border-radius: 0px 10px 0px 0px;
-       }
-  
-     .nav-link {
-      color: black;
-       }
- 
-     .input-icons {
-       width: 100%;
-       margin-bottom: 10px;
-        }
-  
-     .input-icons i {
-        position: absolute;
-        font-size: 10px;
-            }
-  
-     .icon {
-         padding: 10px;
-         min-width: 40px;   
-         }
- 
-         @media only screen and (max-width: 1000px) {
-         #outer {
-         flex-direction: column;
-         }
-      .main-form {
-        max-width: unset;
-        margin-right: 30px;
-        margin-left: 30px;
-        margin-top: 20px;
-        margin-bottom: 20px; 
-      }    
-      .button {
-      margin-left: 20px; 
-       border-radius: 6px;
-       margin-right: 20px;
-     }
-     .button button {
-       font-size: 1rem;
-       padding: 5px;
-       width: 100%;
-       background-color: blue;
-       
-     }
-     
-     }
-      @media only screen and (max-width: 1000px) {
-     
-   .profile {
-     background-color: #cfcfcf;
-     border-radius: 0px 10px 0px 0px;
-   }
- 
-   .nav-link {
-     color: black;
-     font-size: 10px; 
-     --bs-nav-link-padding-x: 4.6rem; 
-   }
- 
- }
- 
- 
+   }    
+
   </style>
-  <div id="outer">
-    <div class="left-design">
-      <img src="./image-removebg-preview.png" class="site-logo">
-      <img src="./image-removebg-preview (1).png" class="background-image">
+
+  <div id="outer" style="position: relative; max-width: 70%;margin: 40px auto;border-radius: 10px;background: white;box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);display: flex;  margin-top: 5%;">
+    <div class="left-design " style="margin-right: 80px; background-position: center; border-radius: 10px 0 0 10px; background-color: lightcyan;">
+      <img src="./image_processing20221113-28192-l2y5ei__1_-removebg-preview.png" class="site-logo mt-4" style="position: absolute; max-width: 150px; left: 5%;">
+      <img src="./image-removebg-preview (3).png" class="background-image">
     </div>    
-    <form class="main-form first">
-     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <div class="p-0 col-sm-6"> 
-            <button class="nav-link active w-100" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">For Companies</button>
-        </div>
-        <div class="profile p-0 col-sm-6"> 
-            <button class="nav-link w-100" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">For engineers</button>
-        </div>
-        </div>    
+    <form class="main-form first mb-5 mt-5" style="margin-right: 80px;  border-radius : 0 10px 10px 0;box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist" style="font-size: 10px; font-weight: 10px; border-radius: 0px 10px 0px 0px;">
+    <div class="p-0 col-sm-6"> 
+        <button class="nav-link active w-100" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true" style="font-weight: bold; ">For companies</button>
+    </div>
+    <div class="p-0 col-sm-6"> 
+        <button class="nav-link w-100" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style="background-color: #cfcfcf;border-radius: 0px 10px 0px 0px; color: black;">For engineers</button>
+    </div>
+    </div>
       <div class="p-3">
-      <p class="step">step 2 of 2</p>
-      <div class="main-form__title">
+      <p class="step mb-0" style="font-size: 11px;">step 2 of 2</p>
+      <div class="main-form__title" style="font-weight:bolder; font-size: 11px;">
         <p>Create your Company account </p>
       </div>
+      <div class="input-icons mb-3">
+        <i class="fa fa-user icon" style=" position: absolute; font-size: 10px; padding: 10px;"></i>
+        <input class="main-form__input form-control text-center" type="text" placeholder="Company Name" style="border: 1px solid #cfcfcf; font-size: 12px;">
+    </div>
+    <div class="input-icons mb-3">
+        <i class="fa fa-globe icon" style=" position: absolute; font-size: 10px; padding: 10px;"></i>
+        <input class="main-form__input form-control text-center" type="text" placeholder="Company Website" style="border: 1px solid #cfcfcf; font-size: 12px;">
+    </div>
+    <div class="input-icons mb-3">
+        <i class="fa fa-briefcase icon" style=" position: absolute; font-size: 10px; padding: 10px;"></i>
+        <select class="w-100 py-1" style="border: 1px solid #cfcfcf; font-size: 12px; text-align: center; border-radius: 5px;">
+          <option  value="option2">Job title</option>
+          <option value="option3">Teacher</option>
+          </select>
+        </div>
+       <p class="step mb-0" style="font-size: 11px;">How many engineers do you plan to hire in the next 6 months?</p>
        <div class="input-icons">
-            <i class="fa fa-user icon"></i>
-            <input class="main-form__input form-control" type="text" placeholder="Company Name" />
+        <i class="fa fa-users icon mb-3" style=" position: absolute; font-size: 10px; padding: 10px;"></i>
+        <input class="main-form__input form-control text-center" type="text" placeholder="e.g 12" style="border: 1px solid #cfcfcf; font-size: 12px;">
+       </div>
         </div>
-        <div class="input-icons">
-            <i class="fa fa-globe icon"></i>
-            <input class="main-form__input form-control" type="text" placeholder="Company Website" />
+        <div class="button mx-3">
+          <button type="button" class="btn btn-primary px-2 py-1 w-100 fs-6" style="border-radius: 6px; border: none;">Sign up</button>
+        </div>        
+        <div class="terms p-3 text-center">
+          <p class="step" style="font-size: 10px; ">By signing up, you agree to <a href="#">Terms & Conditions</a> and our <a href="#">Privacy Policy</a></p>
+      </div>
         </div>
-        <div class="input-icons">
-            <i class="fa fa-briefcase icon"></i>
-            <input class="main-form__input form-control" type="text" placeholder="Job Title" />
-        </div>
-        <p class="step">How many engineers do you plan to hire in the next 6 months?</p>
-        <div class="input-icons">
-            <i class="fa fa-users icon"></i>
-            <input class="main-form__input form-control" type="text" placeholder="e.g 12" />
-        </div>
-        </div>
-        <div class="button">
-          <button type="button">Sign up</button>
-        </div>
-        <div class="terms">
-        <p class="step">By signing up, you agree to <a href="#">Terms & Conditions</a> and our <a href="#">Privacy Policy</a></p>
-        </div></div>
     </form>
-  </div>
 </body>
 </html>
